@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "django>=5.1.7",
+    "django-browser-reload>=1.18.0",
 ]
 
 [dependency-groups]

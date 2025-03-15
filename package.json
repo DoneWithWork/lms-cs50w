@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "tailwindcss": "^4.0.14",
+    "@tailwindcss/postcss": "^4.0.14",
+    "postcss": "^8.5.3"
+  },
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./static/src/input.css -o ./static/src/styles.css --watch"
+  }
+}

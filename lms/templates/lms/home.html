@@ -1,13 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LMS</title>
-    {% load static %}
-    <link href="{% static 'src/styles.css' %}" rel="stylesheet" />
-  </head>
-  <body>
-    <h1 class="text-4xl">Hi</h1>
-  </body>
-</html>
+{% extends 'base.html' %} 
+{% block title %} 
+SkillHub
+{% endblock%}
+
+{% block content %}
+<div class="">
+ <div class="min-h-[400px] h-full flex flex-col-reverse xl:flex-row items-center justify-center gap-6 md:gap-10 w-full bg-gray-100 px-4 xl:px-8 lg:px-12 py-6">
+     
+    <!-- Text Content -->
+    <div class="text-center md:text-left max-w-lg">
+      <h1 class="text-3xl font-semibold mb-3 md:mb-4">Take Learning Beyond</h1>
+      {% load static %}
+      <p class="text-gray-700 text-lg">In a forever-changing world, upskilling and improvement are vital.</p>
+    </div>
+
+    <!-- Image -->
+    <img src="{% static 'images/man-studying.jpg' %}" 
+      class="rounded-md object-cover w-full max-w-[90%]  xl:max-w-[600px] h-auto md:h-[300px] lg:h-[350px]" 
+      alt="Man Studying"/>
+
+  </div>
+</div>
+{% endblock %}

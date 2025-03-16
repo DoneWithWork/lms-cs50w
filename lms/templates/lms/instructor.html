@@ -1,0 +1,12 @@
+{% extends 'base.html' %} 
+{% block title %} 
+SkillHub
+{% endblock%}
+
+{% block content %}
+<div class="w-full flex flex-col items-center">
+
+<p class="text-base">Email: {{ instructor.email }}</p>
+<p class="text-base">Display Name: {{ instructor.display_name }}</p>
+</div>
+{% endblock %}

@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+@layer base {
+  a {
+    @apply cursor-pointer;
+  }
+  .search-bar {
+    @apply flex flex-row items-center px-3 py-3 rounded-2xl w-[50%] max-w-[500px] mx-auto transition border-2;
+  }
+  .search-bar:focus-within {
+    @apply border-2 border-blue-500 shadow-md; /* Border appears on focus */
+  }
+}
